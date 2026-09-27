@@ -1,0 +1,31 @@
+fx_version 'cerulean'
+game 'gta5'
+
+description 'BanKickMuteSystem'
+version '1.0.0'
+
+author 'EnderDevelopment'
+
+esx_legacy 'yes'
+
+client_scripts {
+    'client.lua'
+}
+
+server_scripts {
+    '@mysql-async/lib/MySQL.lua',
+    'server.lua'
+}
+
+shared_scripts {
+    'config.lua'
+}
+
+server_exports {
+    'BanKickMuteSystem'
+}
+
+dependencies {
+    'mysql-async',
+    'es_extended'
+}
